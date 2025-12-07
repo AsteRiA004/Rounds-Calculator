@@ -9,11 +9,12 @@ A simple calculator GUI application for the video game ROUNDS by Landfall Games.
 - **Attack speed**
 
 
-<span style="font-size:30px;">Installation</span>
+## Installation
 Clone this repository or download the ZIP file. Inside the folder, open a command prompt and run:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Disclaimer: Many of the damage values were found through vigorous in-game testing. Because of that, actual damage values may not exactly coincide with in-game experience. Keep that in mind while using the program!
+
+Disclaimer: Many of the damage values were found through rigorous in-game testing. Because of that, actual damage values may not exactly coincide with in-game experience. Keep that in mind while using the program!
