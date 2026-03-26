@@ -44,7 +44,7 @@ class MainWindow(QMainWindow):
         self.reset_button = QPushButton("❌", self)
 
         # my info label
-        self.my_info_label = QLabel("Damage: 55.0\nMax bullet DPS: 54.46\nAttack speed: 100.0%\nReload time: 2.33s\nBullet speed: 100.0%\nHealth: 100.0\nLife steal: 0%\nAverage block damage: 0\nMaximum block damage: 0\nBlock cooldown: 4.75s", self)
+        self.my_info_label = QLabel("Damage: 55.0\nMax bullet DPS: 61.11\nAttack speed: 100.0%\nReload time: 2.00s\nBullet speed: 100.0%\nHealth: 100.0\nLife steal: 0%\nAverage block damage: 0\nMaximum block damage: 0\nBlock cooldown: 4.00s", self)
 
         self.scroll1 = QScrollArea(self)
 
@@ -428,12 +428,12 @@ class MainWindow(QMainWindow):
         bullet_dps = 54.46
         hp = 100.0
         bullet_speed = 100.0
-        reload_speed = 2.33
+        reload_speed = 2.00
         attack_speed = 100.0
         absolute_attack_speed = 0.35
         life_steal = 0
         bullet_slow = 0
-        block_cooldown = 4.75
+        block_cooldown = 4.00
         bullet_bounces = 0
         aoe = 0
         max_block_damage = 0
@@ -627,9 +627,9 @@ class MainWindow(QMainWindow):
         else:
             bullet_speed_color = 'white'
 
-        if reload_speed > 2.33:
+        if reload_speed > 2.00:
             reload_speed_color = '#f5644d'
-        elif reload_speed < 2.33:
+        elif reload_speed < 2.00:
             reload_speed_color = '#aacc6c'
         else:
             reload_speed_color = 'white'
@@ -646,9 +646,9 @@ class MainWindow(QMainWindow):
         else:
             life_steal_color = '#aacc6c'
 
-        if block_cooldown < 4.75:
+        if block_cooldown < 4.00:
             block_cooldown_color = '#aacc6c'
-        elif block_cooldown > 4.75:
+        elif block_cooldown > 4.00:
             block_cooldown_color = '#f5644d'
         else:
             block_cooldown_color = 'white'
@@ -742,9 +742,9 @@ class MainWindow(QMainWindow):
         max_block_damage = round(max_block_damage, 2)
         average_block_damage = round(average_block_damage, 2)
 
-        if bullet_dps > 54.46:
+        if bullet_dps > 61.11:
             bullet_dps_color = '#aacc6c'
-        elif bullet_dps < 54.46:
+        elif bullet_dps < 61.11:
             bullet_dps_color = '#f5644d'
         else:
             bullet_dps_color = 'white'
